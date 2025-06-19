@@ -1,4 +1,18 @@
 terraform {
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "terra"
+    storage_account_name = "storageterro"
+    container_name       = "conterro"
+    key                  = "terraform.tfstate"
+  }
+}
+
+# rest of your resources go below...
+resource "azurerm_resource_group" "example" {
+  name     = "terra"
+  location = "East US"
+}
 
   required_providers {
     azurerm = {
