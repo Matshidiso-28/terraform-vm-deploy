@@ -20,7 +20,7 @@ jobs:
 
       - name: Terraform Apply
         env:
-          ARM_CLIENT_ID: 683ee45a-4174-4052-8bd1-ee07ddddb081
+          ARM_CLIENT_ID: 
           ARM_SUBSCRIPTION_ID: cf59511e-1dbb-417d-ba5e-185454d163ee
-          ARM_TENANT_ID: 0746364f-29a1-4bd8-8f34-fd815db4f514
+          ARM_TENANT_ID: 
         run: terraform apply -auto-approve
